@@ -1,56 +1,36 @@
-* {
-  box-sizing: border-box;
+body{
   margin: 0;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
+main{
+  width: 100%;
+  height:100vh;
+  background-color: cornflowerblue;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
-  background: rgba(188, 105, 138, 0.5);
-  background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
-    radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
-    radial-gradient(circle at center right, rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 50%);
-  background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
+  justify-content: center;
 }
 
-@keyframes movement {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
+.kaart{
+  margin: 0 auto;
+  height: 50vh;
+  width: 50vh;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15%;
+  display: flex;
+  background-color: white;
+  display: flex;
 }
 
-article {
-  padding: 1rem;
-  width: 40vw;
-  height: 22vw;
-  color: white;
-
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.8px);
-  -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
-}
-
-h1 {
+.text-in-kaart{
+  align-self: center;
+  flex-direction: column;
   text-align: center;
+}
+
+.titel-van-kaart{
+  transform: translateY(-4em);
+}
+
+.subtext-van-kaart{
+  transform: translateY(4em);
 }

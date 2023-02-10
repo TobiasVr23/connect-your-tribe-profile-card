@@ -1,8 +1,14 @@
 <%- include('./partials/head') %>
 
-<article>
-  <h1>Hallo wereld!</h1>
-  <p>Alles werk! Laat dit visitekaartje in je browser aan een docent zien :D</p>
-</article>
+<main>
+
+
+  <article class="kaart">
+    <div class="text-in-kaart">
+      <div class="titel-van-kaart"><h1>Hallo <%= member.name %> </h1></div>
+      <div class="subtext-van-kaart"><p>Alles werkt! Laat dit visitekaartje in je browser aan een docent zien :D</p></div>
+  </div>
+  </article>
+</main>
 
 <%- include('./partials/foot') %>
